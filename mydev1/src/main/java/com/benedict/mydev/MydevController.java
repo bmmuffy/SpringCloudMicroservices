@@ -1,0 +1,13 @@
+package com.benedict.mydev;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller
+public class MydevController {
+    @GetMapping("/")
+    public String greeting(){
+        return "hello";
+    }
+
+}
