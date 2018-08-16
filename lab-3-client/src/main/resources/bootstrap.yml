@@ -1,0 +1,17 @@
+# Properties active for ALL profiles:
+---
+spring:
+    application:
+        name: lab-3-client
+server:
+    port: 8002
+
+
+# Properties activated if "production" is the active profile:
+---
+spring:
+    profiles:
+        active: production
+    cloud:
+        config:
+            uri: http://localhost:8001
